@@ -260,12 +260,19 @@ header h2 {
 .carousel {
   width: 90%; /* Ajusta el ancho del carrusel */
   margin: 0 auto; /* Centrar el carrusel */
+  display: flex;
+  overflow: hidden;
 }
 
 .carousel img {
   width: 80%; /* Cambia el tamaño de las imágenes */
   height: auto; /* Mantener la proporción */
   margin: 0 auto; /* Centrar las imágenes */
+}
+
+.carousel div {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .music-control {
