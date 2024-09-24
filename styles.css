@@ -258,22 +258,14 @@ header h2 {
   padding: 20px; /* Espaciado interno */
 }
 .carousel {
-    width: 90%; /* Ajusta el ancho del carrusel */
-    margin: 0 auto; /* Centrar el carrusel */
-    overflow: hidden; /* Ocultar imágenes fuera de la vista */
-    position: relative; /* Posicionamiento relativo para el efecto de desplazamiento */
-}
-
-.carousel div {
-    min-width: 100%; /* Cada imagen ocupa el 100% del contenedor */
-    transition: transform 0.5s ease-in-out; /* Efecto de transición suave */
-}
+  width: 90%; /* Ajusta el ancho del carrusel */
+  margin: 0 auto; /* Centrar el carrusel */
+  }
 
 .carousel img {
-    width: 80%; /* Cambia el tamaño de las imágenes */
-    height: auto; /* Mantener la proporción */
-    margin: 0 auto; /* Centrar las imágenes */
-    display: block; /* Asegúrate de que las imágenes sean bloques para el centrado */
+  width: 80%; /* Cambia el tamaño de las imágenes */
+  height: auto; /* Mantener la proporción */
+  margin: 0 auto; /* Centrar las imágenes */
 }
 
 .music-control {
