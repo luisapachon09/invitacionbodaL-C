@@ -1,0 +1,309 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-image: url("./images/img_bg_2.JPG");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.simply-countdown {
+  margin-top: 20px;
+}
+.countdown-timer {
+  font-size: 24px;
+  color: #fff; /* Change text color */
+  background-color: #87c18c; /* Countdown background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for space inside */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  display: inline-block; /* Centering effect */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.countdown-timer:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.btn {
+  background-color: #87c18c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para música */
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.music-control button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.music-control i {
+  font-size: 24px;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.welcome-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.photos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photo {
+  width: 45%;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de eventos */
+.event-section h2 {
+  font-size: 32px; /* Tamaño del título de la sección */
+  color: #87c18c; /* Color del título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.event h3 {
+  font-size: 28px; /* Tamaño de la letra para los subtítulos de eventos */
+  color: #333; /* Color de los subtítulos */
+  margin-bottom: 10px; /* Espacio debajo de los subtítulos */
+}
+
+.event p {
+  font-size: 20px; /* Tamaño de la letra para las descripciones */
+  color: #555; /* Color de las descripciones */
+  margin-bottom: 10px; /* Espacio debajo de los párrafos */
+}
+
+.event-col {
+  font-size: 18px; /* Tamaño de la letra para los detalles de tiempo y fecha */
+  color: #666; /* Color de los detalles */
+}
+
+.btn {
+  font-size: 18px; /* Tamaño de la letra para los botones */
+  padding: 10px 15px; /* Padding para los botones */
+}
+
+.event-section {
+  background-color: #87c18c;
+  color: white;
+  /* padding: 50px 0; */
+  text-align: center;
+}
+
+.event-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.event-wrap {
+  display: flex;
+  justify-content: center; /* Cambiado a center para centrar las tarjetas */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event {
+  background-color: white;
+  color: #87c18c;
+  padding: 20px;
+  margin: 10px;
+  width: 300px; /* Valor por defecto para pantallas más grandes */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .event {
+    width: 90%; /* Ajusta el ancho a un 90% en pantallas pequeñas */
+    max-width: 350px; /* Establece un ancho máximo */
+    margin: 10px auto; /* Centra las tarjetas en el contenedor */
+  }
+}
+
+.event h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.event .event-col {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.event .btn {
+  background-color: #87c18c;
+  color: white;
+}
+
+/* Estilos adicionales */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    .event-box {
+      margin-right: 10px; /* Añade margen derecho */
+      margin-left: 10px; /* Añade margen izquierdo */
+      padding: 20px; /* Ajusta el padding si es necesario */
+    }
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event {
+    width: 90%;
+  }
+
+  .photo {
+    width: 90%;
+  }
+}
+
+.welcome-section {
+  background-image: url("./images/img_bg_6.jpg"); /* Ruta a la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 50px 0; /* Espaciado superior e inferior */
+  color: #fff; /* Color del texto (ajústalo según necesites) */
+  position: relative; /* Para asegurar que el contenido esté en el lugar correcto */
+  z-index: 1; /* Asegura que el contenido esté encima del fondo */
+}
+
+/* Aseguramos que el contenedor de contenido también tenga un fondo semitransparente */
+.welcome-section .container {
+  position: relative; /* Permitir posicionamiento relativo de los hijos */
+  z-index: 2; /* Asegura que el contenido esté encima del fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+.carousel {
+  width: 90%; /* Ajusta el ancho del carrusel */
+  margin: 0 auto; /* Centrar el carrusel */
+}
+
+.carousel img {
+  width: 80%; /* Cambia el tamaño de las imágenes */
+  height: auto; /* Mantener la proporción */
+  margin: 0 auto; /* Centrar las imágenes */
+}
+
+.music-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#music-button {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#music-button:hover {
+  background-color: #3a3a3a;
+  transform: scale(1.1);
+}
+
+#music-icon {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+#music-button:active {
+  transform: scale(0.95);
+}
+
+#music-button.playing #music-icon {
+  color: #ffcc00;
+}
+
+#music-button.playing {
+  background-color: #ff5733;
+}
