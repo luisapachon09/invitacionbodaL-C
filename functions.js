@@ -90,3 +90,15 @@ $(document).ready(function () {
     ],
   });
 });
+
+const carousel = document.querySelector('.carousel');
+    const images = carousel.children;
+    let currentIndex = 0;
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        const offset = -currentIndex * 100; // Cambia el desplazamiento
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
